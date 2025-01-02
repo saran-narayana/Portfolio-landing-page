@@ -1,12 +1,17 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: lufga;
+    font-weight: 400; */
   
 }
 
+
+
 .nav-item a:hover{
-    /* border-radius: 30px;  */
+    
     background-color: coral;
     transition: .1s;  
 }
@@ -357,6 +362,7 @@ h1{
 
 .box{
   border: 1px solid white;
+  
   width:625px;
  background-color: #FFFFFF24;
   height:210px;
@@ -401,5 +407,60 @@ h1{
   }
 }
 
+.achive{
+  margin-left:265px;
+  gap:6rem;
+}
+
+@media(max-width:768px){
+ .achive{
+  margin-left:2rem;
+  gap:2rem;
+  margin-top:-20px;
+  }
+}
+
+
+
+/* Mobile view */
+@media (max-width: 767px) {
+  #blog img {
+    width: 10rem;
+  }
+}
+
+/* Laptop view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #blog img {
+    width: 12rem; 
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+  #blog img {
+    width: 20rem;
+  }
+}
+
+li{
+  color:coral;
+}
 
   
+hr{
+  color: black;
+  
+}
+
+#Footer .nav-link span{
+color: white;
+margin-left:-12px;
+width: 0;
+overflow: hidden;
+transition: 0.5s;
+}
+
+#Footer .nav-link:hover span{
+width:30px;
+}
